@@ -20,11 +20,6 @@ const  Map = () =>{
             window.open("https://www.google.com/maps?q=25.233905792236328,55.30161666870117&z=17&hl=en", "_blank")
         }
 
-        if(location.state.no === 3){
-            window.open("https://goo.gl/maps/HvyhE463ETJEGgju7", "_blank")
-            navigate('/Proceed',{state:{id:location.state.id,no:location.state.no+1}})
-            return;
-        }
         
         navigate('/Proceed',{state:{id:location.state.id,no:location.state.no+1}})
         
@@ -42,9 +37,7 @@ const  Map = () =>{
             document.getElementById('img').setAttribute('src','./XPAND.png')
         }
 
-        if(location.state.no === 3){
-            document.getElementById('img').setAttribute('src','./XHALE.png')
-        }
+
 
 
         // eslint-disable-next-line
