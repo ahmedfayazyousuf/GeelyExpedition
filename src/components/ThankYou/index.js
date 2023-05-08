@@ -1,13 +1,10 @@
-import nislogo from '../Z_Styles/Xtrail Expeditiion.png'
-import nislogo2 from '../Z_Styles/Nissan Logo.png'
-import rostawami from '../Z_Styles/AWR Logo.png'
+import logo from '../Styles&Assets/logo.png';
+import logo2 from '../Styles&Assets/logo2.png';
 import { Link } from "react-router-dom";
-// import xtrail from '../Z_Styles/xtrail.png'
 // import { useNavigate } from 'react-router-dom';
-// import {useLocation} from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 import { useEffect } from 'react';
 import firebase from "../../firbase"
-import {useLocation} from 'react-router-dom';
 
 const  ThankYou = () =>{
 
@@ -49,72 +46,65 @@ const  ThankYou = () =>{
       // eslint-disable-next-line
     },[])
 return(
-    <>
-        <div style={{display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent:'center'}}>
-          <div style={{display: 'flex', flexDirection: 'column', width:'50%'}}>
-            <img id='head' style={{width: '100px', marginLeft: '10px'}} src={nislogo2} alt="Nissan Laptop Cover"/>
-          </div>
 
-          <div style={{display: 'flex', flexDirection: 'column', width:'50%', textAlign: 'right', justifyContent: 'flex-end', alignItems: 'flex-end'}}>
-            <img id='head' style={{width: '180px', textAlign: 'right', marginRight: '10px'}} src={rostawami} alt="Nissan Laptop Cover"/>
-          </div>
-        </div>
+  <div style={{display:"flex", flexDirection:"column", width:"100%", height: "100vh", justifyContent:"center", alignItems:"center"}}>
+    <div style={{display: 'flex', flexDirection: 'column', width: '40%', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100vh'}}>
+      
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '10px'}}>
+          <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
+      </div>
 
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'10px'}}>
+          <h1 className="header" >THE END</h1>
+      </div>
 
-        <div style={{display:"flex", flexDirection:"column", width:"100vw", justifyContent:"center", alignItems:"center", marginTop: '2vh'}}>
+      <div style={{display: 'flex', flexDirection: 'column', width: '100vh', gap:'5px', alignItems: 'center', justifyContent:'center'}}>
+        <h1 style={{color: 'white', fontSize: '18px', fontWeight: '0', marginBottom: '-10px', marginTop: '30px'}}>Geely expedition mission complete!</h1>
+        <p style={{color: 'white', fontSize: '16px', fontWeight: '0', marginBottom: '40px'}}>Thank you for participating!</p>
+        <div style={{backgroundColor: 'white', opacity: '0.7', maxwidth: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '15px'}}>
+          <table style={{borderCollapse: 'collapse', fontSize: '12px', width: '100%', maxWidth: '380px'}}>
 
-          <div style={{display: 'flex', flexDirection: 'column', width: '70%', gap:'5px', alignItems: 'center', justifyContent:'center'}}>
-            
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                <img id='head' style={{width: '270px'}} src={nislogo} alt="Nissan Laptop Cover"/>
-            </div>
+            <tr style={{padding: '5px'}}>
+              <th style={{backgroundColor: 'black', color: 'white', borderColor: 'black'}} >Start Location</th>
+              <th style={{backgroundColor: 'black', color: 'white', borderColor: 'black'}}>End Location</th>
+              <th style={{backgroundColor: 'black', color: 'white', borderColor: 'black'}}>Time Taken</th>
+            </tr>
 
-            <h1 style={{color: 'black', fontSize: '22px', fontWeight: '0', marginBottom: '-10px', marginTop: '30px'}}>Nissan X-Trail Expedition mission complete!</h1>
-            <p style={{color: 'black', fontSize: '20px', fontWeight: '0', marginBottom: '10px'}}>Thank you for participating!</p>
+            <tr style={{padding: '5px'}}>
+              <td style={{padding: '10px'}}>Geely UAE Showroom</td>
+              <td>Museum of the Future</td>
+              <td>y secs</td>
+              <td id='d1'></td>
+            </tr>
 
-            <div style={{backgroundColor: 'white', opacity: '0.7', width: '120%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '15px'}}>
-              <table style={{borderCollapse: 'collapse', fontSize: '12px', width: '100%'}}>
+            <tr style={{padding: '5px'}}>
+              <td>Museum of the Future</td>
+              <td>Geely UAE Showroom</td>
+              <td>x secs</td>
+              <td id='d2'></td>
+            </tr>
 
-                <tr style={{padding: '5px'}}>
-                  <th style={{backgroundColor: 'black', color: 'white', borderColor: 'black'}} >Start Location</th>
-                  <th style={{backgroundColor: 'black', color: 'white', borderColor: 'black'}}>End Location</th>
-                  <th style={{backgroundColor: 'black', color: 'white', borderColor: 'black'}}>Time Taken</th>
-                </tr>
+            <tr style={{padding: '5px'}}>
+              <td></td>
+              <td style={{fontWeight: '900', padding: '10px'}}>TOTAL</td>
+              <td style={{fontWeight: '900'}} id='total'>z secs</td>
+            </tr>
 
-                <tr style={{padding: '5px'}}>
-                  <td>Meydan Hotel</td>
-                  <td>Half Desert Terrain</td>
-                  <td id='d1'></td>
-                </tr>
+          </table>
+        </div>  
+      </div> 
+      
+      <Link to={{pathname:`/uploadimage`}}>
+        <button style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}}>
+            UPLOAD JOURNEY
+        </button>
+      </Link>
 
-                <tr style={{padding: '5px'}}>
-                  <td>Half Desert Terain</td>
-                  <td>Dubai Frame</td>
-                  <td id='d2'></td>
-                </tr>
-
-                <tr style={{padding: '5px'}}>
-                  <td>Dubai Frame</td>
-                  <td>Nikki Beach</td>
-                  <td id='d3'></td>
-                </tr>
-
-                <tr style={{padding: '5px'}}>
-                  <td></td>
-                  <td className="bold">Total</td>
-                  <td className="bold" id='total'>s</td>
-                </tr>
-
-              </table>
-            </div>
-        
-            <Link to={{pathname:`/uploadimage`}}> 
-              <button type="submit" style={{maxWidth: '700px', minWidth: '250px', padding: '10px', color: 'white', backgroundColor: 'black', cursor: 'grab', borderRadius: '30px', marginBottom: '100px', border: 'none'}}>Upload Journey</button>
-            </Link>
-            
-        </div> 
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
+          <img style={{width: '200px'}} src={logo2} alt="Geely Logo"/>
+      </div>
     </div>
-    </>
+  </div>
 )
 }
 
