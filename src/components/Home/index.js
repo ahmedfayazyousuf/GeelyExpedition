@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import xtrail from '../Z_Styles/xtrail.png'
-import nislogo from '../Z_Styles/nislogo.png'
+// import nislogo from '../Z_Styles/nislogo.png'
+
+import geelylogo from '../Styles&Assets/logo.png'
 
 const  Home = () =>{
 return(
@@ -9,7 +11,7 @@ return(
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%', height:'70%'}}>
 
           <div style={{justifyContent: 'center', alignItems: 'center'}}>
-              <img id='head' style={{width: '150px'}} src={nislogo} alt="Nissan Laptop Cover"/>
+              <img id='head' style={{width: '150px'}} src={geelylogo} alt="Nissan Laptop Cover"/>
           </div>
 
           <h1 style={{fontWeight:'1000', fontSize: '60px', marginTop: '15px', marginBottom: '14px'}}>WELCOME</h1>

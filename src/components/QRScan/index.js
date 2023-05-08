@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import '../Z_Styles/Nissan.css'
+// import '../Z_Styles/Nissan.css'
+
+import '../Styles&Assets/style.css'
+
 import firebase from "../../firbase"
 // eslint-disable-next-line
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
