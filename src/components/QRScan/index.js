@@ -128,8 +128,8 @@ const QRScan = () =>{
 
 
     return(
-      <div style={{display:"flex", flexDirection:"column", width:"100%", height: "100vh", justifyContent:"center", alignItems:"center"}}>
-        <div style={{display: 'flex', flexDirection: 'column', width: '40%', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100vh'}}>
+      <div style={{display:"flex", flexDirection:"column", width:"100%", height: "100%", justifyContent:"center", alignItems:"center"}}>
+        <div style={{display: 'flex', flexDirection: 'column', width: '40%', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100%'}}>
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '10px'}}>
                 <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
             </div>
@@ -145,7 +145,7 @@ const QRScan = () =>{
                 <button  id="hide" style={{visibility:'hidden',background:'transparent', borderRadius:'10px', width:'100px', height:'50px', border:'2px solid'}} onClick={Close}>Scan Next Qr</button>
               </div>
 
-              <div id="back" style={{height:'100vh', width:'100vw', position:'absolute', background:'black', opacity:'0.5', zIndex:'999', visibility:'hidden'}}></div>
+              <div id="back" style={{height:'100%', width:'100vw', position:'absolute', background:'black', opacity:'0.5', zIndex:'999', visibility:'hidden'}}></div>
 
               <div className="scan"></div>
 
