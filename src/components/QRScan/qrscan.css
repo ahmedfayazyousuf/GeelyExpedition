@@ -1,0 +1,60 @@
+.qrscan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../Z_Styles/Microsite2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.scanframe{
+    /* height: 480px;
+    width: 854px; */
+    height: 70%;
+    width: 90%;
+    position: relative;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index:300000;
+    left:0;
+    bottom:10px;
+}
+
+.scan{
+    height: 50px;
+    width: 80%;
+
+   
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center;
+}
+
+section{
+
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+    background-position: center center;
+    
+    width:100px;
+
+    position: absolute;
+    left:50
+}
+
+video{
+
+    position: absolute;
+    left:0
+}
+
+
+
