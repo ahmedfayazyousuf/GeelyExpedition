@@ -1,3 +1,5 @@
+import logo from '../Styles&Assets/logo.png';
+import logo2 from '../Styles&Assets/logo2.png';
 import { useEffect, useState } from "react";
 // import '../Z_Styles/Nissan.css'
 
@@ -13,9 +15,6 @@ import axios from "axios";
 import {QrReader} from "react-qr-reader";
 import './qrscan.css'
 import {useLocation} from 'react-router-dom';
-import nislogo from '../Z_Styles/Xtrail Expeditiion.png'
-import nislogo2 from '../Z_Styles/Nissan Logo.png'
-import rostawami from '../Z_Styles/AWR Logo.png'
 import desterrain from '../Z_Styles/Desert Terrain.png'
 import scan from '../Z_Styles/Scanicon.png'
 
@@ -129,53 +128,54 @@ const QRScan = () =>{
 
 
     return(
-      <div className="qrscan">
+      <div style={{display:"flex", flexDirection:"column", width:"100%", height: "100vh", justifyContent:"center", alignItems:"center"}}>
+        <div style={{display: 'flex', flexDirection: 'column', width: '40%', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100vh'}}>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '10px'}}>
+                <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
+            </div>
 
-        <div style={{display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent:'center'}}>
-          <div style={{display: 'flex', flexDirection: 'column', width:'50%'}}>
-            <img id='head' style={{width: '100px', marginLeft: '10px'}} src={nislogo2} alt="Nissan Laptop Cover"/>
-          </div>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'10px'}}>
+                <h1 className="header" >SCAN QR CODE</h1>
+            </div>
 
+            <div className="qrscan">
 
-          <div style={{display: 'flex', flexDirection: 'column', width:'50%', textAlign: 'right', justifyContent: 'flex-end', alignItems: 'flex-end'}}>
-            <img id='head' style={{width: '180px', textAlign: 'right', marginRight: '10px'}} src={rostawami} alt="Nissan Laptop Cover"/>
-          </div>
+              <div id="modal" style={{position:'absolute', height:'250px', border:'2px solid',zIndex:'1000', width:'300px', background:'white', display:'flex', justifyContent:'center', alignItems:'center', visibility:'hidden',borderRadius:'10px'}}>
+                <button id="location" style={{background:'transparent', borderRadius:'10px', width:'90px', height:'50px', marginRight:'15px', border:'2px solid'}} onClick={Handlesubmit}>View Location</button>
+                <button  id="hide" style={{visibility:'hidden',background:'transparent', borderRadius:'10px', width:'100px', height:'50px', border:'2px solid'}} onClick={Close}>Scan Next Qr</button>
+              </div>
+
+              <div id="back" style={{height:'100vh', width:'100vw', position:'absolute', background:'black', opacity:'0.5', zIndex:'999', visibility:'hidden'}}></div>
+
+              <div className="scan"></div>
+
+              <div className="scanframe" style={{zIndex:'1'}}>
+
+                <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
+                  <img id='area' style={{width: '100px', zIndex: '100000000000000',marginBottom:'40px'}} src={desterrain} alt="Nissan Laptop Cover"/>
+                  <img id='head' style={{width: '48%', zIndex: '100000000000000',marginBottom:'75px'}} src={scan} alt="Nissan Laptop Cover"/>
+                </div>
+
+                <QrReader
+                    constraints = {{facingMode: 'environment'} }
+                    onError={handleError}
+                    onResult={handleScan}
+                    videoStyle={{height:'100%',width:'97%',padding:0,left:4,top:0,alignSelf:'center'}}
+                    videoContainerStyle={{height:'100%', width:'100%',left:0,padding:0}}
+                    containerStyle={{height:'80%',left:'15%',width:'70%',top:0}}
+                />
+              </div>
+            </div>
+
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
+                <img style={{width: '200px'}} src={logo2} alt="Geely Logo"/>
+            </div>
         </div>
-
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop:'2vh'}}>
-            <img id='head' style={{width: '270px'}} src={nislogo} alt="Nissan Laptop Cover"/>
-          </div>
-
-        <div id="modal" style={{position:'absolute', height:'250px', border:'2px solid',zIndex:'1000', width:'300px', background:'white', display:'flex', justifyContent:'center', alignItems:'center', visibility:'hidden',borderRadius:'10px'}}>
-          <button id="location" style={{background:'transparent', borderRadius:'10px', width:'90px', height:'50px', marginRight:'15px', border:'2px solid'}} onClick={Handlesubmit}>View Location</button>
-          <button  id="hide" style={{visibility:'hidden',background:'transparent', borderRadius:'10px', width:'100px', height:'50px', border:'2px solid'}} onClick={Close}>Scan Next Qr</button>
-        </div>
-
-        <div id="back" style={{height:'100vh', width:'100vw', position:'absolute', background:'black', opacity:'0.5', zIndex:'999', visibility:'hidden'}}>
-
-        </div>
-        <div className="scan">
-
-        </div>
-        <div className="scanframe" style={{zIndex:'1'}}>
-        <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
-          <img id='area' style={{width: '100px', zIndex: '100000000000000',marginBottom:'40px'}} src={desterrain} alt="Nissan Laptop Cover"/>
-          <img id='head' style={{width: '48%', zIndex: '100000000000000',marginBottom:'75px'}} src={scan} alt="Nissan Laptop Cover"/>
-        </div>
-        <QrReader
-            constraints = {{facingMode: 'environment'} }
-            
-            //style={previewStyle}
-            onError={handleError}
-            onResult={handleScan}
-            videoStyle={{height:'100%',width:'97%',padding:0,left:4,top:0,alignSelf:'center'}}
-            videoContainerStyle={{height:'100%', width:'100%',left:0,padding:0}}
-            containerStyle={{height:'80%',left:'15%',width:'70%',top:0}}
-
-        />
-        </div>
-    </div>
+</div>
     )
 }
 
 export default QRScan
+
+
+

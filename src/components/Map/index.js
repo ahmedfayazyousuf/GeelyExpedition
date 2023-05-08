@@ -1,6 +1,5 @@
-import nislogo from '../Z_Styles/Xtrail Expeditiion.png'
-import nislogo2 from '../Z_Styles/Nissan Logo.png'
-import rostawami from '../Z_Styles/AWR Logo.png'
+import logo from '../Styles&Assets/logo.png';
+import logo2 from '../Styles&Assets/logo2.png';
 import { useNavigate } from 'react-router-dom';
 import {useLocation} from 'react-router-dom';
 import { useEffect } from 'react';
@@ -8,7 +7,7 @@ import { useEffect } from 'react';
 const  Map = () =>{
 
     const navigate = useNavigate();
-    const location = useLocation();
+    const location = useLocation(); 
 
 
     function Handlesubmit(){
@@ -44,42 +43,31 @@ const  Map = () =>{
     },[])
 
     return(
-        <>
-            <div style={{display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent:'center'}}>
-              <div style={{display: 'flex', flexDirection: 'column', width:'50%'}}>
-                <img id='head' style={{width: '100px', marginLeft: '10px'}} src={nislogo2} alt="Nissan Laptop Cover"/>
-              </div>
-    
-              <div style={{display: 'flex', flexDirection: 'column', width:'50%', textAlign: 'right', justifyContent: 'flex-end', alignItems: 'flex-end'}}>
-                <img id='head' style={{width: '180px', textAlign: 'right', marginRight: '10px'}} src={rostawami} alt="Nissan Laptop Cover"/>
-              </div>
+        <div style={{display:"flex", flexDirection:"column", width:"100%", height: "100vh", justifyContent:"center", alignItems:"center"}}>
+            <div style={{display: 'flex', flexDirection: 'column', width: '40%', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100vh'}}>
+                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '10px'}}>
+                    <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
+                </div>
+
+                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'10px'}}>
+                    <h1 className="header" >LOCATION 1</h1>
+                </div>
+
+                <div style={{maxWidth: '700px', minWidth: '200px', backgroundColor: 'rgba(255,255,255,0.6)',  borderRadius: '20px', padding: '20px', margin: '20px', marginTop: '3vh'}}>
+                {/* eslint-disable-next-line */}
+                    <img style={{width: '130px'}} id='img' />
+                </div>
+
+                <button onClick={Handlesubmit} style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}}>
+                    FOLLOW THE TRAIL
+                </button>
+
+                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
+                    <img style={{width: '200px'}} src={logo2} alt="Geely Logo"/>
+                </div>
             </div>
-    
-    
-            <div style={{display:"flex", flexDirection:"column", width:"100vw", justifyContent:"center", alignItems:"center", marginTop: '2vh'}}>
-    
-                <div style={{display: 'flex', flexDirection: 'column', width: '70%', gap:'5px', alignItems: 'center', justifyContent:'center'}}>
-                
-                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                        <img id='head' style={{width: '270px'}} src={nislogo} alt="Nissan Laptop Cover"/>
-                    </div>
-    
-
-                    <div style={{maxWidth: '700px', minWidth: '200px', backgroundColor: 'rgba(255,255,255,0.6)',  borderRadius: '20px', padding: '20px', margin: '20px', marginTop: '3vh'}}>
-                    {/* eslint-disable-next-line */}
-                        <img style={{width: '130px'}} id='img' />
-                    </div>
-                
-                    <button type="submit" style={{maxWidth: '700px', minWidth: '250px', border: '0px', padding: '10px', color: 'white', backgroundColor: '#9E003A', cursor: 'grab', borderRadius: '30px', fontWeight:'300'}} onClick={Handlesubmit}>FOLLOW THE TRAIL</button>
-    
-            
-            </div> 
         </div>
-        </>
     )
-
-
-
 }
 
 export default Map
