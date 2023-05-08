@@ -57,16 +57,8 @@ const QRScan = () =>{
             
           }
 
-          if(data.text === '3'){
- 
-            if(c===0){
-              Users.doc(location.state.id).update({Location3:firebase.firestore.FieldValue.serverTimestamp()})
-              navigate('/map',{state:{no:3,id:location.state.id}})
-            }
-            
-          }
 
-          if(data.text === '4'){
+          if(data.text === '3'){
 
             var ct = new Date().getTime()
 
@@ -74,7 +66,7 @@ const QRScan = () =>{
               Users.doc(location.state.id).update({Location4:firebase.firestore.FieldValue.serverTimestamp()})
               navigate('/ThankYou',{state:{no:4,id:location.state.id,ct:ct}})
             }
-            setCount('4')
+            setCount('3')
           }
 
       }
@@ -99,15 +91,12 @@ const QRScan = () =>{
     }
 
     function Close(){
-
       if(count === '5'){
         navigate('/ThankYou')
       }
-
       document.getElementById('modal').style.visibility = 'hidden';
       document.getElementById('back').style.visibility = 'hidden';
       document.getElementById('hide').style.visibility = 'hidden'
-
     }
 
     useEffect(()=>{
@@ -126,7 +115,7 @@ const QRScan = () =>{
 
       // eslint-disable-next-line
     },[])
-
+                   
 
     return(
       <div className="qrscan">
