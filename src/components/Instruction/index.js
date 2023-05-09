@@ -25,7 +25,7 @@ return(
                 <h1 className="header" >INSTRUCTIONS</h1>
             </div>
 
-            <div style={{maxWidth: '700px', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minWidth: '100px', backgroundColor: 'white', opacity: '0.7', borderRadius: '20px', paddingLeft: '20px', paddingRight: '20px', margin: '20px', marginTop: '0', fontSize: '14px'}}>
+            <div style={{maxWidth: '700px', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minWidth: '250px', backgroundColor: 'white', opacity: '0.7', borderRadius: '20px', paddingLeft: '20px', paddingRight: '20px', margin: '20px', marginTop: '0', fontSize: '14px'}}>
                     <p style={{fontWeight: '900'}}>Welcome to The Great GEELY Expedition!</p>
                     <p>Track your progress on this site, the <br></br>expedition staff shall guide you at each stop.</p>
                 </div>

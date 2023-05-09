@@ -1,7 +1,6 @@
-import nislogo from '../Z_Styles/Xtrail Expeditiion.png'
-import nislogo2 from '../Z_Styles/Nissan Logo.png'
-import rostawami from '../Z_Styles/AWR Logo.png'
-import photos from '../Z_Styles/Photos.png'
+import logo from '../Styles&Assets/logo.png';
+import logo2 from '../Styles&Assets/logo2.png';
+import photos from '../Styles&Assets/Photos.png';
 import { useState } from "react";
  // eslint-disable-next-line
 import firebase from "../../firbase"
@@ -85,43 +84,32 @@ const  UploadImage = () =>{
     }
 
 return(
-    <>
-        <div style={{display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent:'center'}}>
-          <div style={{display: 'flex', flexDirection: 'column', width:'50%'}}>
-            <img id='head' style={{width: '100px', marginLeft: '10px'}} src={nislogo2} alt="Nissan Laptop Cover"/>
-          </div>
-
-          <div style={{display: 'flex', flexDirection: 'column', width:'50%', textAlign: 'right', justifyContent: 'flex-end', alignItems: 'flex-end'}}>
-            <img id='head' style={{width: '180px', textAlign: 'right', marginRight: '10px'}} src={rostawami} alt="Nissan Laptop Cover"/>
-          </div>
-
-          
-
-        </div>
 
 
-        <div style={{display:"flex", flexDirection:"column", width:"100vw", justifyContent:"center", alignItems:"center", marginTop: '2vh'}}>
 
-            <div style={{display: 'flex', flexDirection: 'column', width: '70%', gap:'5px', alignItems: 'center', justifyContent:'center'}}>
+  <div style={{display:"flex", flexDirection:"column", width:"100%", height: "100vh", justifyContent:"center", alignItems:"center"}}>
+        <div style={{display: 'flex', flexDirection: 'column', width: '40%', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100vh'}}>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '10px'}}>
+                <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
+            </div>
+
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '5px'}}>
+                <img id='head' style={{width: '180px', textAlign: 'right', marginRight: '10px'}} src={photos} alt="Nissan Laptop Cover"/>
+            </div>
+
+            <p style={{color: 'white', fontSize: '16px', fontWeight: '0', marginBottom: '25px', marginTop: '-15px', width: '280px'}}>Please upload any images taken on your expedition</p>
             
-                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <img id='head' style={{width: '270px'}} src={nislogo} alt="Nissan Laptop Cover"/>
-                </div>
+            <input title="" id="image-file" multiple accept="image/*" type="file" onChange={handleChange} style={{color: 'transparent', width:"230px",display:"",textAlign:"center",justifyContent:"center", alignItems:"center", marginBottom: '-20px'}} /> 
+            <label id="name">No Image Selected</label>
 
-                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '5px'}}>
-                    <img id='head' style={{width: '180px', textAlign: 'right', marginRight: '10px'}} src={photos} alt="Nissan Laptop Cover"/>
-                </div>
+            <button ref={buttonRef} id="signup" name="signup" type="submit" className="grab" style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}} onClick={sendData}>UPLOAD</button>
 
-                <p style={{color: 'black', fontSize: '22px', fontWeight: '0', marginBottom: '5px', marginTop: '-15px'}}>Please upload any images taken on your expedition</p>
-                
-                <input title="" id="image-file" multiple accept="image/*" type="file" onChange={handleChange} style={{color: 'transparent', width:"230px",display:"",textAlign:"center",justifyContent:"center", alignItems:"center", marginBottom: '-20px'}} /> 
-                <label id="name">No Image Selected</label>
-
-                <button ref={buttonRef} id="signup" name="signup" type="submit" className="grab" style={{width:"230px",height: "50px", marginBottom: '40px', borderRadius: '10px', padding: '10px', color: 'white', backgroundColor: 'black', cursor: 'grab'}} onClick={sendData}>UPLOAD</button>
-        
-        </div> 
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
+                <img style={{width: '200px'}} src={logo2} alt="Geely Logo"/>
+            </div>
+        </div>
     </div>
-    </>
+
 )
 }
 

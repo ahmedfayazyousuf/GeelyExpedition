@@ -103,3 +103,19 @@ html, body {
         width: 100vw;
     }
   }
+
+  input::file-selector-button {
+
+    background-color: white;
+    color: #002277;
+    padding: 10px;
+    width: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    margin-left: 40px;
+  }
