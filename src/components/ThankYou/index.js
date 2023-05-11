@@ -23,23 +23,23 @@ const  ThankYou = () =>{
         const data = doc.data()
         var l1 = new Date(data.Location1.seconds*1000).getTime()
         var l2 = new Date(data.Location2.seconds*1000).getTime()
-        var l3 = new Date(data.Location3.seconds*1000).getTime()
+        // var l3 = new Date(data.Location3.seconds*1000).getTime()
         var l4 = location.state.ct
 // eslint-disable-next-line
         var nikki = 0
         
         console.log(l1)
         var h = l2-l1 // m - h
-        var h2 = l3 - l2 // h - d
-        var h3 = l4 -l3
-        var m1 = Math.floor(h/60/1000)
+        var h2 = l4 - l2 // h - d
+        // var h3 = l4 -l3
+        var m1 = Math.floor(h/60/1000);
         var m2 = Math.floor(h2/60/1000)
-        var m3 = Math.floor(h3/60/1000)
+        // var m3 = Math.floor(h3/60/1000)
 
         document.getElementById('d1').innerHTML = `${m1} min`
         document.getElementById('d2').innerHTML = `${m2} min`
-        document.getElementById('d3').innerHTML = `${m3} min`
-        document.getElementById('total').innerHTML = `${m1+m2+m3} min`
+        // document.getElementById('d3').innerHTML = `${m3} min`
+        document.getElementById('total').innerHTML = `${m1+m2} min`
 
 
       },[])
@@ -74,15 +74,13 @@ return(
             <tr style={{padding: '5px'}}>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Geely UAE Showroom</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Museum of the Future</td>
-              <td style={{padding: '10px', color: 'white'}}>y secs</td>
-              <td id='d1'></td>
+              <td style={{padding: '10px', color: 'white'}}  id='d1'>y secs</td>
             </tr>
 
             <tr style={{padding: '5px'}}>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Museum of the Future</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Geely UAE Showroom</td>
-              <td style={{padding: '10px', color: 'white'}}>x secs</td>
-              <td id='d2'></td>
+              <td style={{padding: '10px', color: 'white'}}  id='d2'>x secs</td>
             </tr>
 
             <tr style={{padding: '5px'}}>

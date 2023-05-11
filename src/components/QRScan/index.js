@@ -95,7 +95,7 @@ const QRScan = () =>{
       }
       document.getElementById('modal').style.visibility = 'hidden';
       document.getElementById('back').style.visibility = 'hidden';
-      document.getElementById('hide').style.visibility = 'hidden'
+      document.getElementById('hide').style.visibility = 'hidden';
     }
 
     useEffect(()=>{
