@@ -20,9 +20,9 @@ return(
               <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
           </div>
 
-          <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'10px'}}>
+          {/* <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'10px'}}>
               <h1 className="header" >LOCATION 1</h1>
-          </div>
+          </div> */}
 
           <button onClick={submit} style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}}>
               TAP TO PROCEED

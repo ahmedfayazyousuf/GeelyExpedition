@@ -51,12 +51,12 @@ const Registration = () =>{
     return(
       <div style={{display:"flex", flexDirection:"column", width:"100%", height: "100vh", justifyContent:"center", alignItems:"center"}}>
         <div style={{display: 'flex', flexDirection: 'column', width: '40%', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100vh'}}>
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '10px'}}>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                 <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
             </div>
 
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'10px'}}>
-                <h1 className="header" >REGISTRATION FORM</h1>
+                <h1 className="header" style={{letterSpacing: '4px'}}>REGISTRATION</h1>
             </div>
 
             <div className="inputdiv">
