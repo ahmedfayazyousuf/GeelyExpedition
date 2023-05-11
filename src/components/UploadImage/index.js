@@ -93,11 +93,11 @@ return(
                 <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
             </div>
 
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '5px'}}>
-                <img id='head' style={{width: '180px', textAlign: 'right', marginRight: '10px'}} src={photos} alt="Nissan Laptop Cover"/>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '30px', marginBottom: '20px'}}>
+                <img id='head' style={{width: '160px', textAlign: 'right', marginRight: '10px'}} src={photos} alt="Cover"/>
             </div>
 
-            <p style={{color: 'white', fontSize: '16px', fontWeight: '0', marginBottom: '25px', marginTop: '-15px', width: '280px'}}>Please upload any images taken on your expedition</p>
+            <p style={{color: 'white', fontSize: '13px', fontWeight: '3000', marginBottom: '35px', letterSpacing: '2px'}}>Please upload photos taken on<br></br>your journey.</p>
             
             <input title="" id="image-file" multiple accept="image/*" type="file" onChange={handleChange} style={{color: 'transparent', width:"230px",display:"",textAlign:"center",justifyContent:"center", alignItems:"center", marginBottom: '-20px'}} /> 
             <label id="name">No Image Selected</label>
