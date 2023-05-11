@@ -73,21 +73,19 @@ return(
             <tr style={{padding: '5px'}}>
               <td style={{padding: '10px'}}>Geely UAE Showroom</td>
               <td>Museum of the Future</td>
-              <td>y secs</td>
               <td id='d1'></td>
             </tr>
 
             <tr style={{padding: '5px'}}>
               <td>Museum of the Future</td>
               <td>Geely UAE Showroom</td>
-              <td>x secs</td>
               <td id='d2'></td>
             </tr>
 
             <tr style={{padding: '5px'}}>
               <td></td>
               <td style={{fontWeight: '900', padding: '10px'}}>TOTAL</td>
-              <td style={{fontWeight: '900'}} id='total'>z secs</td>
+              <td style={{fontWeight: '900'}} id='total'></td>
             </tr>
 
           </table>
