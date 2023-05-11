@@ -98,22 +98,7 @@ const QRScan = () =>{
       document.getElementById('hide').style.visibility = 'hidden';
     }
 
-    useEffect(()=>{
 
-
-      if(location.state.no === 2){
-        document.getElementById('area').setAttribute('src','./Dubai Frame.png')
-      } 
-
-      if(location.state.no === 3){
-        document.getElementById('area').setAttribute('src','./Nikki Beach.png')
-      } 
-      if(location.state.no === 4){
-        document.getElementById('area').setAttribute('src','./Flag.png')
-      } 
-
-      // eslint-disable-next-line
-    },[])
                    
 
     return(
