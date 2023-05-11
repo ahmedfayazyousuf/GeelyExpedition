@@ -140,7 +140,7 @@ const QRScan = () =>{
 
               <div className="scanframe" style={{zIndex:'1'}}>
 
-                <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
+                <div style={{display:'flex',flexDirection:'column', alignItems:'center',height:'300px'}}>
                   <img id='area' style={{width: '100px', zIndex: '100000000000000',marginBottom:'40px'}} src={scan} alt="Nissan Laptop Cover"/>
                   {/* <img id='head' style={{width: '48%', zIndex: '100000000000000',marginBottom:'75px'}} src={scan} alt="Nissan Laptop Cover"/> */}
                 </div>
