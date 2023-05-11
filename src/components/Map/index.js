@@ -29,11 +29,11 @@ const  Map = () =>{
         
 
         if(location.state.no === 1){
-            document.getElementById('img').setAttribute('src','./XPLORE.png')
+            document.getElementById('img').setAttribute('src','./DUBAIFRAME.png')
         }
 
         if(location.state.no === 2){
-            document.getElementById('img').setAttribute('src','./XPAND.png')
+            document.getElementById('img').setAttribute('src','./GEELYSHOWROOM.png')
         }
 
 
@@ -49,17 +49,15 @@ const  Map = () =>{
                     <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
                 </div>
 
-                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'10px'}}>
-                    <h1 className="header" >LOCATION 1</h1>
+                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw'}}>
+                    <h1 className="header" >DESTINATION</h1>
                 </div>
 
-                <div style={{maxWidth: '700px', minWidth: '200px', backgroundColor: 'rgba(255,255,255,0.6)',  borderRadius: '20px', padding: '20px', margin: '20px', marginTop: '3vh'}}>
-                {/* eslint-disable-next-line */}
-                    <img style={{width: '130px'}} id='img' />
-                </div>
+                
+                <img style={{width: '330px'}} id='img' />
 
                 <button onClick={Handlesubmit} style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}}>
-                    FOLLOW THE TRAIL
+                    BEGIN JOURNEY
                 </button>
 
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>

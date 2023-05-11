@@ -25,9 +25,9 @@ return(
                 <h1 className="header" >INSTRUCTIONS</h1>
             </div>
 
-            <div style={{maxWidth: '700px', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minWidth: '250px', backgroundColor: 'white', opacity: '0.7', borderRadius: '20px', paddingLeft: '20px', paddingRight: '20px', margin: '20px', marginTop: '0', fontSize: '14px'}}>
-                    <p style={{fontWeight: '900'}}>Welcome to The Great GEELY Expedition!</p>
-                    <p>Track your progress on this site, the <br></br>expedition staff shall guide you at each stop.</p>
+            <div style={{maxWidth: '700px', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minWidth: '250px', backgroundColor: '#002377', paddingLeft: '20px', paddingRight: '20px', margin: '20px', marginTop: '0', fontSize: '14px', border: '2px solid white', borderRadius: '7px'}}>
+                    <p style={{fontWeight: '900', letterSpacing: '2px', color: 'white'}}>WELCOME TO WHERE THE<br></br>FUTURE FLOWS</p>
+                    <p style={{color: 'white'}}>Track your progress on this<br></br>app, the GEELY crew will help you<br></br>along the journey.</p>
                 </div>
 
             <button onClick={Handlesubmit} style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}}>
