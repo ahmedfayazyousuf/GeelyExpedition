@@ -16,7 +16,7 @@ import {QrReader} from "react-qr-reader";
 import './qrscan.css'
 import {useLocation} from 'react-router-dom';
 import desterrain from '../Z_Styles/Desert Terrain.png'
-import scan from '../Z_Styles/Scanicon.png'
+import scan from '../Styles&Assets/qrsquare.png'
 
 
 const QRScan = () =>{
@@ -141,7 +141,6 @@ const QRScan = () =>{
               <div className="scanframe" style={{zIndex:'1'}}>
 
                 <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
-                  <img id='area' style={{width: '100px', zIndex: '100000000000000',marginBottom:'40px'}} src={desterrain} alt="Nissan Laptop Cover"/>
                   <img id='head' style={{width: '48%', zIndex: '100000000000000',marginBottom:'75px'}} src={scan} alt="Nissan Laptop Cover"/>
                 </div>
 
