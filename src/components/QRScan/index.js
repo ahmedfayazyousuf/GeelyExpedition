@@ -141,7 +141,7 @@ const QRScan = () =>{
               <div className="scanframe" style={{zIndex:'1'}}>
 
                 <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
-                  <img id='head' style={{width: '48%', zIndex: '100000000000000',marginBottom:'75px'}} src={scan} alt="Nissan Laptop Cover"/>
+                  <img id='head' style={{width: '20%', zIndex: '100000000000000',marginBottom:'75px'}} src={scan} alt="Nissan Laptop Cover"/>
                 </div>
 
                 <QrReader
