@@ -55,7 +55,7 @@ const  Map = () =>{
                 </div>
 
                 
-                <img style={{width: '330px'}} id='img' />
+                <img style={{width: '330px'}} id='img' alt='xxx'/>
 
                 <button onClick={Handlesubmit} style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}}>
                     BEGIN JOURNEY
