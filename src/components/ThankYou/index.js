@@ -61,7 +61,7 @@ return(
       <div style={{display: 'flex', flexDirection: 'column', width: '100vh', gap:'5px', alignItems: 'center', justifyContent:'center'}}>
         <p style={{color: 'white', fontSize: '14px', fontWeight: '900', marginBottom: '-10px', marginTop: '-2px', letterSpacing: '2.5px'}}>YOUR JOURNEY IS NOW COMPLETE.</p>
         <p style={{color: 'white', fontSize: '14px', fontWeight: '0', marginBottom: '40px'}}>Thank you for participating.</p>
-        <div style={{maxwidth: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '15px'}}>
+        <div style={{borderRadius:'10px',border:'1px solid white',maxwidth: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '15px', backgroundColor: '#002277', padding: '10px'}}>
           
           <table style={{borderCollapse: 'collapse', fontSize: '12px', width: '100%', maxWidth: '380px'}}>
 
@@ -69,7 +69,7 @@ return(
               <th style={{color: 'white', fontWeight: '900', borderRight: '1px solid white', padding: '10px', paddingTop: '0'}}>Start Location</th>
               <th style={{color: 'white', fontWeight: '900', borderRight: '1px solid white', padding: '10px', paddingTop: '0'}}>End Location</th>
               <th style={{color: 'white', fontWeight: '900', padding: '10px', paddingTop: '0'}}>Time Taken</th>
-            </tr>
+            </tr>       
 
             <tr style={{padding: '5px'}}>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Geely UAE Showroom</td>
@@ -79,7 +79,7 @@ return(
 
             <tr style={{padding: '5px'}}>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Museum of the Future</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Geely UAE Showroom</td>
+              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Dubai Frame</td>
               <td style={{padding: '10px', color: 'white'}}  id='d2'>x secs</td>
             </tr>
 
