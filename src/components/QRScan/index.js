@@ -50,7 +50,7 @@ const QRScan = () =>{
           if(data.text === '2'){
 
             if(c===0){
-              Users.doc(location.state.id).update({Location2:firebase.firestore.FieldValue.serverTimestamp()})
+              
               navigate('/map',{state:{no:2,id:location.state.id}})
             }
             

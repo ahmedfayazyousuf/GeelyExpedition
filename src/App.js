@@ -9,10 +9,12 @@ import ThankYou2 from './components/ThankYou2';
 import Map from './components/Map';
 import Proceed from './components/Proceed';
 import Summary from './components/Summary';
+import Question from './components/Question';
+import Score from './components/Score';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
       <Router>
         <Routes>
           <Route exact path="/" element={<Registration />} />
@@ -24,6 +26,9 @@ function App() {
           <Route path="/UploadImage" element={<UploadImage />} />
           <Route path="/Proceed" element={<Proceed />} />
           <Route path="/Summary" element={<Summary />} />
+          <Route path="/question" element={<Question />} />
+          <Route path="/score" element={<Score />} />
+
         </Routes>
       </Router>
     </div>

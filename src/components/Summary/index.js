@@ -2,8 +2,45 @@ import nislogo from '../Z_Styles/Xtrail Expeditiion.png'
 import nislogo2 from '../Z_Styles/Nissan Logo.png'
 import rostawami from '../Z_Styles/AWR Logo.png'
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
+import firebase from "../../firbase"
 
 const  Summary = () =>{
+
+  useEffect(()=>{
+
+    const Users = firebase.firestore().collection("VIP").get().then(docs =>{
+      var arr =[]
+      docs.forEach(doc =>{
+        arr.push(doc.data())
+      })
+
+      console.log(arr)
+
+    })
+
+      const Users2 = firebase.firestore().collection("VIP").get().then(docs =>{
+        var arr2 =[]
+        docs.forEach(doc =>{
+          arr2.push(doc.data())
+        })
+
+        console.log(arr2)
+
+  });
+
+        const Users4 = firebase.firestore().collection("VIP").get().then(docs =>{
+          var arr3 =[]
+          docs.forEach(doc =>{
+            arr3.push(doc.data())
+          })
+          console.log(arr3)
+
+
+      
+    });
+
+  },[])
 return(
     <>
         <div style={{display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent:'center'}}>
