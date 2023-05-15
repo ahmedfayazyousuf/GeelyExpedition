@@ -53,9 +53,9 @@ const Q50Q2 = () => {
                 1:"Coolray",
                 2:"Emgrand",
                 3:"Geometry C",
-                4:"OPTION D"
+                4:"All of the Above"
             },
-            "Answer":1
+            "Answer":4
         }
     }
 
@@ -198,12 +198,7 @@ const Q50Q2 = () => {
             console.log(qnos[qno],'llll')
         var qn = question[qnos[qno]]
 
-        if(qnos[qno] === 4){
-            document.getElementById('option4').style.display = 'none'
-        }
-        else{
-            document.getElementById('option4').style.display = 'initial'
-        }
+
 
         console.log(C,'count')
     
@@ -384,12 +379,6 @@ const Q50Q2 = () => {
         console.log(qno)
 
 
-        if(qnos[qno] === 4){
-            document.getElementById('option4').style.display = 'none'
-        }
-        else{
-            document.getElementById('option4').style.display = 'initial'
-        }
 
 
 
