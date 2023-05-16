@@ -6,6 +6,7 @@ import { useState } from "react"
 import { useLocation, useNavigate } from 'react-router-dom';
 import firebase from "../../firbase"
 import { getElementError } from '@testing-library/react';
+import { getAuth, onAuthStateChanged, signOut} from "firebase/auth";
 import '../Styles&Assets/style2.css'
 // import { useNavigate } from 'react-router-dom';
 // import {useLocation} from 'react-router-dom';
@@ -98,6 +99,16 @@ const Q50Q2 = () => {
 
     useEffect(()=>{
 
+            const auth = getAuth();
+            onAuthStateChanged(auth, (user) => {
+                if(!user) {
+                    history(`/qrscan`,{state:{no:location.state.no,id:location.state.id}}); //If User is not logged in, redirect to login page
+                  }
+                  else{
+                    console.log(user)
+                  }
+            });
+
         const Users = firebase.firestore().collection("Users");
         Users.doc(location.state.id).update({Location2:firebase.firestore.FieldValue.serverTimestamp()})
 
@@ -139,7 +150,14 @@ const Q50Q2 = () => {
 
                 
             onTimesUp();
-            history('/score',{state:{score:score,time:time,no:location.state.no,id:location.state.id}})
+
+            const auth = getAuth();
+                signOut(auth).then(() => {
+                    history('/score',{state:{score:score,time:time,no:location.state.no,id:location.state.id}})
+                }).catch((error) => {
+                // An error happened.
+                });
+            
             }
         }, 1000);
         }
@@ -337,7 +355,14 @@ const Q50Q2 = () => {
                     TimeTaken: (60- Number(time))
                 })
 
-                history('/score',{state:{score:score+1,time:time,no:location.state.no,id:location.state.id}})
+                const auth = getAuth();
+                signOut(auth).then(() => {
+                    history('/score',{state:{score:score+1,time:time,no:location.state.no,id:location.state.id}})
+                }).catch((error) => {
+                // An error happened.
+                });
+
+                
 
 
             }else{
@@ -353,7 +378,14 @@ const Q50Q2 = () => {
                 })
     
             console.log('score=',score)
-            history('/score',{state:{score:score,time:time,no:location.state.no,id:location.state.id}})
+
+            const auth = getAuth();
+                signOut(auth).then(() => {
+                    history('/score',{state:{score:score,time:time,no:location.state.no,id:location.state.id}})
+                }).catch((error) => {
+                // An error happened.
+                });
+            
 
             }
 
