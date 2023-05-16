@@ -28,7 +28,7 @@ return(
               <th style={{color: 'white', fontWeight: '900', borderRight: '1px solid white', padding: '20px'}}>Ph. No.</th>
               <th style={{color: 'white', fontWeight: '900', borderRight: '1px solid white', padding: '20px'}}>Correct Answers</th>
               <th style={{color: 'white', fontWeight: '900', borderRight: '1px solid white', padding: '20px'}}>Time Taken (Quiz/seconds)</th>
-              <th style={{color: 'white', fontWeight: '900', padding: '20px'}}>Time Taken (Expedition/minutes)</th>
+
             </tr>       
 
             <tr className="trr">
@@ -37,7 +37,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
 
             <tr className="trr">
@@ -46,7 +46,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
             <tr className="trr">
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
@@ -54,7 +54,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
 
             <tr className="trr">
@@ -63,7 +63,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
             <tr className="trr">
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
@@ -71,7 +71,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
 
             <tr className="trr">
@@ -80,7 +80,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
             <tr className="trr">
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
@@ -88,7 +88,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
 
             <tr className="trr">
@@ -97,7 +97,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
             <tr className="trr">
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
@@ -105,7 +105,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
 
             <tr className="trr">
@@ -114,7 +114,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
             <tr className="trr">
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
@@ -122,7 +122,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
 
             <tr className="trr">
@@ -131,7 +131,7 @@ return(
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
+
             </tr>
             
 
