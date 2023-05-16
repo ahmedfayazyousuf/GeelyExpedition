@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Registration from './components/Registration';
 import Instruction from './components/Instruction';
+import TriviaInstructions from './components/TriviaInstructions';
 import UploadImage from './components/UploadImage';
 import QRScan from './components/QRScan';
 import ThankYou from './components/ThankYou';
@@ -12,7 +13,7 @@ import Proceed from './components/Proceed';
 import Question from './components/Question';
 import Score from './components/Score';
 
-function App() {
+function App() { 
   return (
     <div className="App"> 
       <Router>
@@ -28,6 +29,7 @@ function App() {
           <Route path="/question" element={<Question />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/score" element={<Score />} />
+          <Route path="/TriviaInstructions" element={<TriviaInstructions />} />
         </Routes>
       </Router>
     </div>
