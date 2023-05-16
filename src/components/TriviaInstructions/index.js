@@ -20,8 +20,8 @@ return(
                 <img style={{width: '320px'}} src={logo} alt="Geely Logo"/>
             </div>
 
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'10px'}}>
-                <h1 className="header" style={{marginBotton: '-30px'}}>TRIVIA<br></br>INSTRUCTIONS</h1>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100vw', marginBottom:'-15px'}}>
+                <h1 className="header">TRIVIA<br></br>INSTRUCTIONS</h1>
             </div>
 
             <div style={{maxWidth: '700px', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minWidth: '250px', backgroundColor: '#002377', paddingLeft: '20px', paddingRight: '20px', margin: '20px', marginTop: '0', fontSize: '14px', border: '1px solid white', borderRadius: '10px'}}>
@@ -33,7 +33,7 @@ return(
                 START
             </button>
 
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '15px'}}>
                 <img style={{width: '200px'}} src={logo2} alt="Geely Logo"/>
             </div>
         </div>
