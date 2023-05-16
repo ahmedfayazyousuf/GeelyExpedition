@@ -45,15 +45,17 @@ const  UploadImage = () =>{
 
     }
 
-
-
-
-
     function sendData (){
 
+      
+      
+
+      if(count == 0){
+        alert('no image selected!');
+        return;
+      }
       buttonRef.current.disabled = true;
       document.getElementById("buttontext").innerHTML = "";
-
       document.getElementById("loader").style.display = "initial";
  // eslint-disable-next-line
       file.map((file,index)=>{
@@ -95,9 +97,9 @@ return(
         
 
       
-        <div style={{display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', width: '100vw'}}>
-          <a href='https://www.facebook.com/' style={{color: 'white', marginRight:'20px'}}>Skip</a>
-        </div>
+        {/* <div style={{display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', width: '100vw'}}>
+          <a href='https://geelyexpedition.vercel.app/ThankYou2' style={{color: 'white', marginRight:'20px'}}>Skip</a>
+        </div> */}
         
         
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '10px'}}>
@@ -121,6 +123,7 @@ return(
             <div id="loader" className="loader"></div>
           </button>
         </div>
+        <a href='https://geelyexpedition.vercel.app/ThankYou2' style={{color: 'white', fontSize: '14px'}}>Skip</a>
 
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '15px'}}>
             <img style={{width: '200px'}} src={logo2} alt="Geely Logo"/>
