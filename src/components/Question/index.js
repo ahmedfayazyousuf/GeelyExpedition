@@ -134,7 +134,7 @@ const Q50Q2 = () => {
                 Users.doc(location.state.id).update({
                     Time: firebase.firestore.FieldValue.serverTimestamp(),
                     Score:score,
-                    TimeTaken:time
+                    TimeTaken: (60- Number(time))
                 })
 
                 
@@ -334,7 +334,7 @@ const Q50Q2 = () => {
                 Users.doc(location.state.id).update({
                     Time: firebase.firestore.FieldValue.serverTimestamp(),
                     Score:score+1,
-                    TimeTaken:time
+                    TimeTaken: (60- Number(time))
                 })
 
                 history('/score',{state:{score:score+1,time:time,no:location.state.no,id:location.state.id}})
@@ -349,7 +349,7 @@ const Q50Q2 = () => {
                 Users.doc(location.state.id).update({
                     Time: firebase.firestore.FieldValue.serverTimestamp(),
                     Score:score,
-                    TimeTaken:time
+                    TimeTaken: (60- Number(time))
                 })
     
             console.log('score=',score)
