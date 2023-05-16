@@ -10,10 +10,10 @@ const  Proceed = () =>{
 
   function submit(){
 
-    if(location.state.no === 2){
-      navigate('/question',{state:{id:location.state.id,no:location.state.no}})
-      return
-    }
+    // if(location.state.no === 2){
+    //   navigate('/question',{state:{id:location.state.id,no:location.state.no}})
+    //   return
+    // }
 
     navigate('/qrscan',{state:{id:location.state.id,no:location.state.no}})
   }
