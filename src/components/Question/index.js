@@ -468,7 +468,7 @@ return(
         <div style={{display: 'flex', flexDirection: 'column', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100vh'}}>
             
             
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '-10px'}}>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '-10px', marginBottom: '-20px'}}>
                 <img style={{width: '320px'}} src={frame} alt="Geely Logo"/>
             </div>
 
