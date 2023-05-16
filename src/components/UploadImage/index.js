@@ -47,9 +47,15 @@ const  UploadImage = () =>{
 
     function sendData (){
 
+      
+      
+
+      if(count == 0){
+        alert('no image selected!');
+        return;
+      }
       buttonRef.current.disabled = true;
       document.getElementById("buttontext").innerHTML = "";
-
       document.getElementById("loader").style.display = "initial";
  // eslint-disable-next-line
       file.map((file,index)=>{
