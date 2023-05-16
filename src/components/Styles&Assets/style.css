@@ -141,3 +141,13 @@ html, body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+.trr{
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.trr:nth-child(even){
+    background-color: #062f9a;
+}

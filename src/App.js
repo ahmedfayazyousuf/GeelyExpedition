@@ -6,6 +6,7 @@ import UploadImage from './components/UploadImage';
 import QRScan from './components/QRScan';
 import ThankYou from './components/ThankYou';
 import ThankYou2 from './components/ThankYou2';
+import Leaderboard from './components/Leaderboard';
 import Map from './components/Map';
 import Proceed from './components/Proceed';
 import Question from './components/Question';
@@ -25,8 +26,8 @@ function App() {
           <Route path="/UploadImage" element={<UploadImage />} />
           <Route path="/Proceed" element={<Proceed />} />
           <Route path="/question" element={<Question />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/score" element={<Score />} />
-
         </Routes>
       </Router>
     </div>
