@@ -1,14 +1,14 @@
 import logo from '../Styles&Assets/logo.png';
 import logo2 from '../Styles&Assets/logo2.png';
 import { Link } from "react-router-dom";
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {useLocation} from 'react-router-dom';
 import { useEffect } from 'react';
 import firebase from "../../firbase"
 
 const  ThankYou = () =>{
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const location = useLocation();
 
 
@@ -60,7 +60,7 @@ return(
 
       <div style={{display: 'flex', flexDirection: 'column', width: '100vh', gap:'5px', alignItems: 'center', justifyContent:'center'}}>
         <p style={{color: 'white', fontSize: '14px', fontWeight: '900', marginBottom: '-10px', marginTop: '-2px', letterSpacing: '2.5px'}}>YOUR JOURNEY IS NOW COMPLETE.</p>
-        <p style={{color: 'white', fontSize: '14px', fontWeight: '0', marginBottom: '40px'}}>Thank you for participating.</p>
+        <p style={{color: 'white', fontSize: '14px', fontWeight: '0', marginBottom: '10px'}}>Thank you for participating.</p>
         <div style={{borderRadius:'10px',border:'1px solid white',maxwidth: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '15px', backgroundColor: '#002277', padding: '10px'}}>
           
           <table style={{borderCollapse: 'collapse', fontSize: '12px', width: '100%', maxWidth: '380px'}}>
@@ -72,21 +72,21 @@ return(
             </tr>       
 
             <tr style={{padding: '5px'}}>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Geely UAE Showroom</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Museum of the Future</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d1'>y secs</td>
+              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Geely Showroom</td>
+              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Dubai Frame</td>
+              <td style={{padding: '10px', color: 'white'}}  id='d1'>y mins</td>
             </tr>
 
             <tr style={{padding: '5px'}}>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Museum of the Future</td>
               <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Dubai Frame</td>
-              <td style={{padding: '10px', color: 'white'}}  id='d2'>x secs</td>
+              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Geely Showroom</td>
+              <td style={{padding: '10px', color: 'white'}}  id='d2'>x mins</td>
             </tr>
 
             <tr style={{padding: '5px'}}>
               <td style={{borderRight: '1px solid white'}}></td>
               <td style={{padding: '10px', color: 'white', fontWeight: '900', borderRight: '1px solid white'}}>TOTAL</td>
-              <td style={{padding: '10px', color: 'white', fontWeight: '900'}} id='total'>z secs</td>
+              <td style={{padding: '10px', color: 'white', fontWeight: '900'}} id='total'>z mins</td>
             </tr>
 
           </table>
@@ -100,7 +100,7 @@ return(
         </button>
       </Link>
 
-      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '15px'}}>
           <img style={{width: '200px'}} src={logo2} alt="Geely Logo"/>
       </div>
     </div>

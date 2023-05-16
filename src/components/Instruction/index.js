@@ -25,7 +25,7 @@ return(
                 <h1 className="header" >INSTRUCTIONS</h1>
             </div>
 
-            <div style={{maxWidth: '700px', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minWidth: '250px', backgroundColor: '#002377', paddingLeft: '20px', paddingRight: '20px', margin: '20px', marginTop: '0', fontSize: '14px', border: '2px solid white', borderRadius: '7px'}}>
+            <div style={{maxWidth: '700px', minHeight: '200px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minWidth: '250px', backgroundColor: '#002377', paddingLeft: '20px', paddingRight: '20px', margin: '20px', marginTop: '0', fontSize: '14px', border: '1px solid white', borderRadius: '10px'}}>
                     <p style={{fontWeight: '900', letterSpacing: '2px', color: 'white'}}>WELCOME TO WHERE THE<br></br>FUTURE FLOWS</p>
                     <p style={{color: 'white'}}>Track your progress on this<br></br>app, the GEELY crew will help you<br></br>along the journey.</p>
                 </div>
