@@ -29,7 +29,7 @@ return(
                     <p style={{color: 'white'}}>Answer all four questions<br></br>correctly in the quickest time, and<br></br>stand a chance to be one of the<br></br>first to drive the future.</p>
                 </div>
 
-            <button onClick={Handlesubmit} style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}}>
+            <button onClick={Handlesubmit} style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '15px'}}>
                 START
             </button>
 
