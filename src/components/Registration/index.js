@@ -1,3 +1,4 @@
+import {useRef} from 'react';
 import firebase from '../../firbase';
 import { useNavigate } from 'react-router-dom';
 import logo from '../Styles&Assets/logo.png';
@@ -6,6 +7,7 @@ import logo2 from '../Styles&Assets/logo2.png';
 const Registration = () =>{
 
   const navigate = useNavigate();
+  const buttonRef = useRef(null);
 
   function Handlesubmit() {
     const Users = firebase.firestore().collection("Users");
@@ -36,6 +38,10 @@ const Registration = () =>{
           
       }
 
+      buttonRef.current.disabled = true;
+      document.getElementById("buttontext").innerHTML = "";
+      document.getElementById("loader").style.display = "initial";
+
     Users.add({
       Name:Name,
       Email:Email,
@@ -47,7 +53,7 @@ const Registration = () =>{
   })
 
   }
-
+ 
     return(
       <div style={{display:"flex", flexDirection:"column", width:"100%", height: "100vh", justifyContent:"center", alignItems:"center"}}>
         <div style={{display: 'flex', flexDirection: 'column', width: '40%', gap:'5px', alignItems: 'center', justifyContent:'center', height: '100vh'}}>
@@ -75,9 +81,12 @@ const Registration = () =>{
                 <p id="error" style={{color: 'red', padding: '0', margin: '0', fontSize: '10px'}}></p>
             </div>
 
-            <button onClick={Handlesubmit} style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px'}}>
-                SUBMIT
-            </button>
+            <div style={{padding: '0', margin: '0',display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+                <button ref={buttonRef} id="signup" name="signup" type="submit" className="grab" style={{backgroundColor: '#002277', color: 'white', width: '150px', height: '37px' , border: '1px solid white', cursor: 'grab', marginTop: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', alignSelf: 'center'}} onClick={Handlesubmit}>
+                    <p id="buttontext" style={{margin: '0', padding: '0'}}>SUBMIT</p>
+                    <div id="loader" className="loader"></div>
+                </button>
+            </div>
 
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
                 <img style={{width: '200px'}} src={logo2} alt="Geely Logo"/>
