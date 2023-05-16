@@ -13,7 +13,7 @@ const  Map = () =>{
     function Handlesubmit(){
         if(location.state.no === 1){
             window.open("https://www.google.com/maps/place/25%C2%B014'02.3%22N+55%C2%B018'06.3%22E/@25.2341899,55.3013454,19.67z/data=!4m4!3m3!8m2!3d25.2339706!4d55.3017387?hl=en", "_blank")
-            navigate('/TriviaIntsructions',{state:{id:location.state.id,no:location.state.no+1}})
+            navigate('/TriviaInstructions',{state:{id:location.state.id,no:location.state.no+1}})
         }
 
         if(location.state.no === 2){
