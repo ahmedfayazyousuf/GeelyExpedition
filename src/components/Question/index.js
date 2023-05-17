@@ -317,6 +317,9 @@ const Q50Q2 = () => {
 
     function handleSubmit(){
 
+        document.getElementById(`option${selected}`).style.background = "transparent";
+            document.getElementById(`option${selected}`).style.color = "white";
+
 
 
         console.log(C)
@@ -479,27 +482,29 @@ return(
             {/* <p style={{color: 'white', fontSize: '16px', marginBottom: '-5px'}}>Time: <span className='base-timer__label' id='base-timer__label'>60</span> Seconds</p> */}
             
             <div id="app">
-            <div className="base-timer">
-        <svg className="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <g className="base-timer__circle">
-            <circle className="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
-            <path
-                id="base-timer-path-remaining"
-                stroke-dasharray="283"
-                className="base-timer__path-remaining green ${remainingPathColor}"
-                d="
-                M 50, 50
-                m -45, 0
-                a 45,45 0 1,0 90,0
-                a 45,45 0 1,0 -90,0
-                "
-            ></path>
-            </g>
-        </svg>
-        <span id="base-timer-label" className="base-timer__label">{
-            timeLeft
-        }</span>
-        </div>
+                <div className="base-timer">
+                    <svg className="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <g className="base-timer__circle">
+                        <circle className="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+                        <path
+                            id="base-timer-path-remaining"
+                            stroke-dasharray="283"
+                            className="base-timer__path-remaining green ${remainingPathColor}"
+                            d="
+                            M 50, 50
+                            m -45, 0
+                            a 45,45 0 1,0 90,0
+                            a 45,45 0 1,0 -90,0 
+                            "
+                        ></path>
+                        </g>
+                    </svg>
+
+                    <span id="base-timer-label" className="base-timer__label">{
+                        timeLeft
+                    }</span>
+
+                </div>
             </div>
 
             <div style={{display: 'flex', flexDirection: 'column', textAlign: 'center', margin: '0', padding: '0', paddingLeft: '30px', paddingRight: '30px'}} >
