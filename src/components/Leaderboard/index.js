@@ -11,7 +11,7 @@ const  Instruction = () =>{
     const location = useLocation();
 
     useEffect(()=>{
-      const Users = firebase.firestore().collection("Users").orderBy("Score", "desc").orderBy("TimeTaken").limit(10).onSnapshot (docs=>{
+      const Users = firebase.firestore().collection("Users").orderBy("Score", "desc").orderBy("TimeTaken").limit(4).onSnapshot (docs=>{
 
         const boxes = document.querySelectorAll('.trr');
 
@@ -63,109 +63,6 @@ return(
               <th style={{color: 'white', fontWeight: '900', borderRight: '1px solid white', padding: '20px'}}>Time Taken (Quiz/seconds)</th>
 
             </tr>       
-
-            {/* <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr>
-
-            <tr className="trr">
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>Adithya</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>adithya@thehanginghouse.com</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>971582155414</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>3</td>
-              <td style={{padding: '10px', color: 'white', borderRight: '1px solid white'}}>33 secs</td>
-
-            </tr> */}
             
 
           </table>
