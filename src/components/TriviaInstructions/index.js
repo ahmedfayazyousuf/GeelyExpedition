@@ -2,6 +2,7 @@ import logo from '../Styles&Assets/logo.png';
 import logo2 from '../Styles&Assets/logo2.png';
 import { useNavigate } from 'react-router-dom';
 import {useLocation} from 'react-router-dom';
+import { getAuth, signInAnonymously } from "firebase/auth";
 
 const  Instruction = () =>{
 
@@ -10,7 +11,11 @@ const  Instruction = () =>{
 
  
     function Handlesubmit(){
-        navigate('/question',{state:{id:location.state.id,no:location.state.no}})
+        const auth = getAuth();
+        signInAnonymously(auth).then(()=>{
+            navigate('/question',{state:{id:location.state.id,no:location.state.no}})
+        })
+        
     }
 
 return(
